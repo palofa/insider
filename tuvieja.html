@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+<script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+<a-assets>
+    <a-asset-item id="retroarcade" src="scene.gltf"></a-asset-item>
+  </a-assets>
+<a-scene inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui="" device-orientation-permission-ui="">
+<a-assets>
+    <a-asset-item id="retroarcade" src="scene.gltf"></a-asset-item>
+  </a-assets>
+ <a-asset-item id="control" src="control/scene.gltf"></a-asset-item>
+  </a-assets>
+<a-asset-item id="control" src="piano/scene.gltf"></a-asset-item>
+  </a-assets>
+  
+  <a-entity environment="preset: starry"></a-entity>
+  <a-entity gltf-model="scene.gltf" position="-1.04983 20.02216 -1.01865" scale="0.1 0.1 0.1"></a-entity>
+            <a-sky color="#ECECEC" material="" geometry=""></a-sky>
+    <div class="a-loader-title" style="display: none;"></div></a-scene>
+<a-entity position="2 0.4 0.02" gltf-model="control/scene.gltf"></a-entity>
+<a-entity scale="7 7 7" position="-10 0.2 -8" gltf-model="piano/scene.gltf" rotation="1 45 0" a-entity="" <="">
+      <a-sky geometry="" material="" color="#ECECEC"></a-sky>
+    </a-entity>
+      <a-sky color="#ECECEC"></a-sky>
+    </a-scene>
+  </body>
+</html>
+
